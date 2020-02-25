@@ -56,7 +56,7 @@ object Day1 extends App {
   }
 
   var totalFuel = 0
-  for (line <- Source.fromResource("input.txt").getLines) {
+  for (line <- Source.fromResource("day1/input.txt").getLines) {
     totalFuel += calculate_required_fuel(line.toInt)
   }
   println(s"Total Fuel: $totalFuel")
